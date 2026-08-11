@@ -12,7 +12,7 @@
 	- **Wait**: Sometimes it is useful to wait for a process to stop running.
 	- **Miscellaneous Control**:  Other than killing or waiting for a process, most operating systems provide some kind of method to suspend a process, and then resume it.
 	- **Status**: there are usually interfaces to get some status information about a process as well. 
-	- Consult [[Figure 4.1]]: Loading: From Program to Process.
+	- Consult [[Figure 4.1.svg]] or [[Figure 4.1]]: Loading: From Program to Process.
 	
 - Process Creation: A Little More Detail.
 	- You may be asking ¿How programs are transformed into processes?  Or mor specifically, how does the OS get a program up an running? Well, the first thing is to **load** its code and any static data, like initialized variables, into memory. Programs initially reside on **disk** in some kind of executable format. The process of loading a program and static data into memory requieres the OS to read those bytes from disk and place them in memory somewhere.
@@ -27,7 +27,7 @@
 		
 		- **Blocked**: In the blocked state, a process has performed some kind of operation that makes it not ready to run until some other event takes place. For example, when a process initiates an I/O requestto a disk, it becomes blocked and thus some other process can use the processor.
 		
-		- Please check [[Figure 4.2]] for a visual healp.
+		- Please check [[Figure 4.2]] or [[Figure 4.2]] for a visual healp.
 		
 	- Being moved from ready to running means the process has been **scheduled**; Being moved from running to ready means the process has been **descheduled**. Once a process has become blocker, the OS will keep it as such until some event occurs, at that point, the process moves to the ready state again.
 	

@@ -1,4 +1,4 @@
-- Interlude:
+- Prelude:
 	- The problem of developing one of the most well-known approaches to scheduling, known as **Multi-Level Feedback Queue (MLFQ)**. The fundamental problems that MLFQ address is two-fold. It would try to optimize *turnaround time*, and will try to make a system feel responsive to interactive users.
 	
 - Basic rules:
@@ -13,5 +13,5 @@
 		3. When a job enters the system, it is placed at the highest priority.
 		4.  If a job uses up its allotment while running, its priority is reduced. 
 		5.  After some time period **S**, move all the jobs in the system to the top most queue.
-	- Check [[Figure 8.4]] for a visual help whit this rules. The addition of the time period S leads to the question: ¿What should **S** be set to? This could look as voo-doo magic, there is no correct answer, the truth is that if S is set too high, loon-running jobs could starve, too low and interactive jobs may not get a proper share of the CPU, of course there's some automatic methods based on machine learning.
+	- Check [[Figure 8.4]] or [[Figure 8.4.svg]] for a visual help whit this rules. The addition of the time period S leads to the question: ¿What should **S** be set to? This could look as voo-doo magic, there is no correct answer, the truth is that if S is set too high, loon-running jobs could starve, too low and interactive jobs may not get a proper share of the CPU, of course there's some automatic methods based on machine learning.
 	
